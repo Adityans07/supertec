@@ -1,0 +1,75 @@
+/* Footer.css */
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center text */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack sections vertically */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap sections on smaller screens */
+    justify-content: space-between; /* Space out sections */
+    margin-bottom: 20px; /* Space between content and bottom */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow */
+    margin: 0 10px; /* Margin between sections */
+}
+
+.footer-section h4 {
+    margin-bottom: 10px; /* Space below headings */
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-section li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.footer-section a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+    color: #ccc; /* Light gray text on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444; /* Top border for separation */
+    padding-top: 10px; /* Space above text */
+    text-align: center; /* Center text */
+}
+
+.fa-twitter, .fa-facebook, .fa-instagram {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+.fa-twitter:hover, .fa-facebook:hover, .fa-instagram:hover {
+    color: #06abf3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+    .footer-section {
+        margin-bottom: 20px; /* Space between sections on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        margin: 0; /* Remove margin on smallest screens */
+    }
+}
