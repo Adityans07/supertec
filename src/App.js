@@ -4,6 +4,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Products from './components/Products';
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
       <Navbar />
       <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact/>} /> */}
+          <Route path="/products" element={<Products />} />
+          {/* <Route path="/contact" element={<Contact/>} /> */}
         </Routes>
       <Footer />
     </div>
